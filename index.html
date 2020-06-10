@@ -10,99 +10,29 @@
 
 
 <body>
-    <script>
-        $(document).ready(function () {
-
-
-let $btns = $('.project-area .button-group button');
-
-
-$btns.click(function (e) {
-
-    $('.project-area .button-group button').removeClass('active');
-    e.target.classList.add('active');
-
-    let selector = $(e.target).attr('data-filter');
-    $('.project-area .grid').isotope({
-        filter: selector
-    });
-
-    return false;
-})
-
-$('.project-area .button-group #btn1').trigger('click');
-
-$('.project-area .grid .test-popup-link').magnificPopup({
-    type: 'image',
-    gallery: { enabled: true }
-});
-
-
-// Owl-carousel
-
-$('.site-main .about-area .owl-carousel').owlCarousel({
-    loop: true,
-    autoplay: true,
-    dots: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        560: {
-            items: 2
-        }
-    }
-})
-
-// sticky navigation menu
-
-let nav_offset_top = $('.header_area').height() + 50;
-
-function navbarFixed() {
-    if ($('.header_area').length) {
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            if (scroll >= nav_offset_top) {
-                $('.header_area .main-menu').addClass('navbar_fixed');
-            } else {
-                $('.header_area .main-menu').removeClass('navbar_fixed');
-            }
-        })
-    }
-}
-
-navbarFixed();
-
-});
-    </script>
-    <script src="/js/jquery.3.4.1.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/js/jquery.3.4.1.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/js/bootstrap.min.js"></script>
 
     <!--  isotope js library  -->
-    <script src="/_includes/isotope/isotope.min.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/_includes/isotope/isotope.min.js"></script>
 
     <!--  Magnific popup script file  -->
-    <script src="/_includes/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/_includes/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
     <!--  Owl-carousel js file  -->
-    <script src="/_includes/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/_includes/owl-carousel/js/owl.carousel.min.js"></script>
 
-    <script src="/js/main.js"></script>
+    <script src="https://winstardeveloper.github.io/prayush/js/main.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-
     <!--  font awesome icons  -->
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
-
-
     <!--  Magnific Popup css file  -->
     <link rel="stylesheet" type="text/css" href="./_includes/Magnific-Popup/dist/magnific-popup.css">
-
     <link rel="stylesheet" type="text/css" href="./_includes/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./_includes/owl-carousel/css/owl.theme.default.min.css">
-
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
     <!--  Responsive css file  -->
     <link rel="stylesheet" type="text/css" href="./css/responsive.css">
     <!--  ======================= Start Header Area ============================== -->
