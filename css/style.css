@@ -226,6 +226,18 @@
     transition: transform .2s ease;
 }
 
+.site-main .project-area .grid .our-project .img iframe:hover{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    transform: scale(1.1);
+}
+
+.site-main .project-area .grid .our-project iframe {
+    width: inherit;
+    height: inherit;
+    border-radius: 6px;
+    transition: transform .2s ease;
+}
+
 /* End Project Area */ 
 
 
