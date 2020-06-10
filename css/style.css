@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Roboto";
-    src: '../fonts/Roboto/Roboto-Regular.ttf';
+    src: 'Roboto-Regular.ttf';
 }
 
 html, body{
@@ -40,6 +40,14 @@ html, body{
 }
 
 /* Buttons */ 
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
 
 .button{
     padding: .8rem 2.2rem;
@@ -80,15 +88,6 @@ p.para{
 
 .font-roboto{
     font-family: var(--roboto);
-}
-
-button:focus,
-button:active
-button:hover
-.btn:active,
-.btn.active{
-    outline: 0px !important;
-    box-shadow: none !important;
 }
 
 .title-h1{
