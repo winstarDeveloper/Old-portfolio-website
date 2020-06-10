@@ -388,7 +388,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 element-item Robocon-2016">
                         <div class="our-project">
                             <div class="img">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qHx8TOCFiIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="test-popup-iframe" width="560" height="315" src="https://www.youtube.com/embed/qHx8TOCFiIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="title py-4">
                                 <h4 class="text-uppercase">Video</h4>
@@ -400,7 +400,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item Robocon-2018">
                     <div class="our-project">
                         <div class="img">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F0DwSbUkXVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="test-popup-iframe" width="560" height="315" src="https://www.youtube.com/embed/F0DwSbUkXVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">Video</h4>
@@ -455,7 +455,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
 
 <!--  Owl-carousel js file  -->
-<script type="text/javascript" src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -484,6 +484,10 @@ $('.project-area .grid .test-popup-link').magnificPopup({
     gallery: { enabled: true }
 });
 
+$('.project-area .grid .test-popup-iframe').magnificPopup({
+    type: 'iframe',
+    gallery: { enabled: true }
+});
 
 // Owl-carousel
 
