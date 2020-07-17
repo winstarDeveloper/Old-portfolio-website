@@ -2,3 +2,4 @@
 
 Simple static Website to showcase Curriculum Vitae
 
+- Live: https://winstardeveloper.github.io/prayush/
